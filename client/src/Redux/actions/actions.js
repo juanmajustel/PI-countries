@@ -6,6 +6,7 @@ import {
   GET_BY_ID,
   GET_BY_NAME,
   GET_COUNTRIES,
+  SET_SEARCH_TERM,
 } from "./constantes";
 
 export function getCountries() {
@@ -83,3 +84,12 @@ export function postActivity(input) {
     return await axios.post("http://localhost:3001/activities", input);
   };
 }
+export function setSearchTerm(searchTerm) {
+  return {
+    type: SET_SEARCH_TERM,
+    payload: searchTerm,
+  };
+}
+
+//Añadimos una nueva acción llamada setSearchTerm que toma un parámetro term y devuelve un objeto con el tipo de acción y el término de búsqueda.
+//Modificamos la acción getByName para que, además de llamar a la API, también despache la acción setSearchTerm con el nombre buscado.

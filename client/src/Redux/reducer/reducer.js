@@ -8,6 +8,7 @@ import {
   GET_BY_NAME,
   GET_BY_ID,
   SET_ERROR,
+  SET_SEARCH_TERM,
 } from "../actions/constantes";
 
 let initialState = {
@@ -16,6 +17,7 @@ let initialState = {
   activities: [],
   detail: [],
   error: "",
+  searchTerm: "",
 };
 
 export default function rootReducer(state = initialState, action) {
@@ -137,8 +139,15 @@ export default function rootReducer(state = initialState, action) {
         ...state,
         error: action.payload,
       };
-
+    case SET_SEARCH_TERM:
+      return {
+        ...state,
+        searchTerm: action.payload,
+      };
     default:
       return state;
   }
 }
+
+//Añadimos un nuevo estado llamado searchTerm al estado inicial del reducer.
+//Agregamos el caso de acción SET_SEARCH_TERM al reducer para actualizar el estado searchTerm con el término de búsqueda recibido.

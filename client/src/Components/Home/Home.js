@@ -13,13 +13,19 @@ export default function Home() {
 
   const allCountries = useSelector((state) => state.allCountries);
   const allActivities = useSelector((state) => state.activities);
+  const searchTerm = useSelector((state) => state.searchTerm);
 
   const [currPage, setCurrPage] = useState(1);
   const [countriesPage, setCountriesPage] = useState(10);
   const lastCountry =
     currPage === 1 ? currPage * countriesPage : currPage * countriesPage - 1;
   const firstCountry = lastCountry - countriesPage;
-  const currCountries = allCountries.slice(firstCountry, lastCountry);
+
+  const filteredCountries = allCountries.filter((country) =>
+    country.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const currCountries = filteredCountries.slice(firstCountry, lastCountry);
 
   function paginatedNum(pageNum) {
     setCurrPage(pageNum);
@@ -66,6 +72,10 @@ export default function Home() {
     dispatch(setError(""));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [error]);
+
+  // function handleSearchTermChange(e) {
+  //   dispatch(setSearchTerm(e.target.value));
+  // }
 
   return (
     <div className="divsHome">
@@ -126,7 +136,7 @@ export default function Home() {
       </div>
       <div>
         <Paginated
-          allCountries={allCountries}
+          allCountries={filteredCountries}
           countriesPage={countriesPage}
           paginatedNum={paginatedNum}
           currPage={currPage}
