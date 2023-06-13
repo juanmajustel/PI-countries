@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+
+.card {
+  margin: 5px;
+  width: 300px;
+  height: 320px;
+  border-radius: 30px;
+  background: #000000b6;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  font-size: 1.5em;
+  color: rgb(250, 246, 6);
+  font-family: "Orbitron", sans-serif;
+}
+
+.img {
+  border-radius: 10px;
+  width: 180px;
+  height: fit-content;
+}
+.Link {
+  text-decoration: none;
+}

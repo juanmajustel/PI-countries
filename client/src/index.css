@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  background-image: url("../src/Assets/Img/bkg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+code {
+  font-family: "Orbitron", sans-serif;
+}
+link {
+  text-decoration: none;
+}

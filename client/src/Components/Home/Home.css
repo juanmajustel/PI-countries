@@ -1,0 +1,36 @@
+.divsHome {
+  margin: 50px;
+}
+
+.containerFilters {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.button {
+  font-family: monospace;
+  background-color: #f3f7fe;
+  color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  font-family: "Orbitron";
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
+}
+
+.filter {
+  border-radius: 10px;
+  background: rgba(10, 118, 219, 0.486);
+  color: rgb(12, 12, 12);
+  font-size: larger;
+  cursor: pointer;
+  padding: 5px;
+}

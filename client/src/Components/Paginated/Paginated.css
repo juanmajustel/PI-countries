@@ -1,0 +1,42 @@
+.paging {
+  justify-content: center;
+  color: rgb(14, 16, 15);
+  font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding: 1px;
+}
+.paging button {
+  font-family: monospace;
+  background: rgba(224, 20, 20, 0.712);
+  color: #fffbfb;
+  border: none;
+  border-radius: 8px;
+  width: 90px;
+  height: 30px;
+  font-family: "Orbitron";
+  transition: 0.3s;
+  margin: 5px;
+}
+
+.paging button:hover {
+  background-color: #f8f406;
+  box-shadow: 0 0 0 5px #d3d6005f;
+  color: #fff;
+}
+.spanCurr {
+  background-color: rgb(210, 100, 100);
+  color: black;
+  text-shadow: 1px 1px whitesmoke;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-weight: bold;
+  transform: scale(2);
+}
+.paging button.active {
+  background-color: #f8f406;
+  box-shadow: 0 0 0 5px #d3d6005f;
+  color: #050505;
+}
