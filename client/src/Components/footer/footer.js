@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 import style from "./footer.module.css";
+import logo from "../../Assets/Img/globe-2.png";
+import { NavLink } from "react-router-dom";
 
 class Footer extends Component {
   render() {
     return (
       <div className={style.footer}>
+        <NavLink to="/" className={style.logo}>
+          <img src={logo} alt="logo" />
+        </NavLink>
         <div className={style.infoLeft}>
-          <h5>--VIDEOGAMES PI HENRY--</h5>
           <span>
             🙋‍♂️ - Juan Manuel Justel <br />
             📧 - JuanmaJustel@gmail.com

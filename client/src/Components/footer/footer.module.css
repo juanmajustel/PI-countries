@@ -4,30 +4,36 @@
   justify-content: space-between;
   height: 6rem;
   width: 95%;
-  padding: 0.2rem 4%;
+  padding: 0.2rem 3%;
   color: rgb(255, 255, 255);
   text-align: left;
   backdrop-filter: blur(4px);
   margin-top: 9em;
+  margin: auto;
 }
 
-.footer h5 {
-  margin-bottom: 3rem;
-  font-size: 1.5rem;
-
-  color: rgb(240, 156, 12);
-  letter-spacing: 2px;
-}
 .infoLeft {
   text-decoration: none;
   color: rgb(255, 249, 249);
   font-weight: 700;
   text-transform: uppercase;
+  margin: auto;
 
   letter-spacing: 1px;
   /* margin-left: 5em; */
 }
-
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img:hover {
+  transform: scale(1.1);
+}
+.logo img {
+  width: 90px; /* Ajusta el tamaño del ancho según tus necesidades */
+  height: 90px; /* Ajusta el tamaño de la altura según tus necesidades */
+  margin-right: 10px; /* Ajusta el margen derecho según tus necesidades */
+}
 .infoLeft,
 .infoRight {
   display: flex;

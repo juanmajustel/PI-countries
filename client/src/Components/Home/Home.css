@@ -34,3 +34,68 @@
   cursor: pointer;
   padding: 5px;
 }
+
+/* Estilos para teléfonos pequeños */
+@media (max-width: 480px) {
+  .divsHome {
+    margin: 20px;
+  }
+
+  .containerFilters {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .button {
+    width: 80px;
+    height: 30px;
+  }
+
+  .filter {
+    font-size: medium;
+    padding: 3px;
+  }
+}
+
+/* Estilos para notebooks y pantallas medianas */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .divsHome {
+    margin: 30px;
+  }
+
+  .containerFilters {
+    margin: 30px;
+  }
+
+  .button {
+    width: 90px;
+    height: 35px;
+  }
+
+  .filter {
+    font-size: large;
+    padding: 4px;
+  }
+}
+
+/* Estilos para pantallas grandes y monitores */
+@media (min-width: 1025px) {
+  .divsHome {
+    margin: 50px;
+  }
+
+  .containerFilters {
+    margin: 50px;
+  }
+
+  .button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .filter {
+    font-size: larger;
+    padding: 5px;
+  }
+}

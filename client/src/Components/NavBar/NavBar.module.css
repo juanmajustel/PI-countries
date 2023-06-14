@@ -19,14 +19,66 @@
   color: rgb(14, 13, 13);
   transform: scale(1.1);
 }
+
 .img {
   vertical-align: middle;
 }
+
 .Logo {
-  width: 50px;
+  width: 90px;
   height: 50px;
 }
+
 .Link {
   text-decoration: none;
   color: black;
+}
+
+/* Estilos para teléfonos pequeños */
+@media (max-width: 480px) {
+  .NavBar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .h3 {
+    font-size: 0.8em;
+  }
+
+  .Logo {
+    width: 70px;
+    height: 40px;
+  }
+}
+
+/* Estilos para notebooks y pantallas medianas */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .NavBar {
+    height: 8em;
+  }
+
+  .h3 {
+    font-size: 1.2em;
+  }
+
+  .Logo {
+    width: 120px;
+    height: 70px;
+  }
+}
+
+/* Estilos para pantallas grandes y monitores */
+@media (min-width: 1025px) {
+  .NavBar {
+    height: 6.5em;
+  }
+
+  .h3 {
+    font-size: 1.5em;
+  }
+
+  .Logo {
+    width: 100px;
+    height: 50px;
+  }
 }
