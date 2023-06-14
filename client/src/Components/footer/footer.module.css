@@ -1,0 +1,70 @@
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  width: 95%;
+  padding: 0.2rem 4%;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  backdrop-filter: blur(4px);
+  margin-top: 9em;
+}
+
+.footer h5 {
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+
+  color: rgb(240, 156, 12);
+  letter-spacing: 2px;
+}
+.infoLeft {
+  text-decoration: none;
+  color: rgb(255, 249, 249);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+  /* margin-left: 5em; */
+}
+
+.infoLeft,
+.infoRight {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.infoLeft > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  color: white;
+}
+
+.infoRight > a {
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  border-radius: 1.5rem;
+  background-color: rgb(15, 15, 15);
+  color: rgb(250, 246, 246);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.infoRight > a:hover {
+  transform: scale(1.05);
+}
+
+.infoRight > a:active {
+  transform: scale(0.95);
+}
+
+.infoRight img {
+  height: 3.4rem;
+}

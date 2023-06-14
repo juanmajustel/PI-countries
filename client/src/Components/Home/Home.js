@@ -7,6 +7,7 @@ import { orderBy } from "../../Redux/actions/orderBy";
 import { filterAct, filterContinent } from "../../Redux/actions/filters";
 import "./Home.css";
 import setError from "../../Redux/actions/setError";
+import Footer from "../footer/footer";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -143,6 +144,7 @@ export default function Home() {
           setCurrPage={setCurrPage}
         />
       </div>
+      <Footer />
     </div>
   );
 }

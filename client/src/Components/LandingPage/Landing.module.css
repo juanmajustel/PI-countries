@@ -127,7 +127,7 @@
 /* Monitores y pantallas más grandes */
 @media (min-width: 1025px) {
   .content {
-    top: 70%;
+    top: 50%;
     transform: translate(-4%, -60%);
   }
 
