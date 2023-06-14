@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
 .landingContainer {
   position: relative;
   height: 100vh;
@@ -86,4 +87,55 @@
   box-shadow: 0 0 0.6em 0.25em var(--glow-color),
     0 0 2.5em 2em var(--glow-spread-color),
     inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+/* Media Queries */
+
+/* Celulares */
+@media (max-width: 600px) {
+  .content {
+    top: 50%;
+    transform: translate(-4%, -50%);
+    left: 20%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+}
+
+/* Notebooks y tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .content {
+    top: 55%;
+    transform: translate(-4%, -55%);
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+}
+
+/* Monitores y pantallas más grandes */
+@media (min-width: 1025px) {
+  .content {
+    top: 70%;
+    transform: translate(-4%, -60%);
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  .button {
+    font-size: 20px;
+  }
 }
